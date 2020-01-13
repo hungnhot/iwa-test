@@ -16,6 +16,5 @@
           = item[:subtext]
   
   .next-news.col-md-12
-    .col-md-2.btn.btn-primary
-      = link_to "More News", "?page=#{@page + 1}"
+      a.col-md-2.btn.btn-primary href="?page=#{@page + 1}" More News
 
