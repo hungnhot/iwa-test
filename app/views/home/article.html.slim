@@ -1,0 +1,8 @@
+.container.pt-3#article-page
+  .row
+    .card
+      - if @data[:image].present?
+        .card-img
+          img src=@data[:image].to_s class="img-fluid" alt=""
+      .caption.card-body
+          == @data[:content]

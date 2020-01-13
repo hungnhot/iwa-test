@@ -1,0 +1,53 @@
+.view-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-group {
+  margin-top: 20px;
+
+  .image {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+
+  .title {
+    float: left;
+  }
+
+  .sitebit {
+    float: left;
+    font-style: italic;
+  }
+
+  .subtext {
+    float: left;
+    margin-top: 20px;
+  }
+}
+
+.next-news {
+  text-align: center;
+  margin: 5px 0px;
+
+  a {
+    color: white;
+  }
+}
+
+#article-page {
+  .card {
+    .card-img {
+      text-align: center;
+
+      img {
+        max-height: 400px;
+      }
+    }
+  }
+}

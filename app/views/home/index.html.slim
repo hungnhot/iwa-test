@@ -1,0 +1,21 @@
+.container.pt-3#home-page
+  - @data.each do |item|
+    - item.symbolize_keys!
+    .list-group
+      .list-group-item.col-md-12
+        - image = item[:image].present? ? item[:image].to_s : 'no-image.jpeg'
+        .image.col-md-2
+          img src=image class="img-fluid" alt="" width="150px" height="150px"
+
+        .title.col-md-10
+          h4
+            = link_to item[:text], article_path(url: item[:url])
+        p.sitebit.col-md-10
+          = item[:sitebit]
+        p.subtext.col-md-10
+          = item[:subtext]
+  
+  .next-news.col-md-12
+    .col-md-2.btn.btn-primary
+      = link_to "More News", "?page=#{@page + 1}"
+
