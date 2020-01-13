@@ -29,14 +29,33 @@
     float: left;
     margin-top: 20px;
   }
+
+  @media screen and (max-width: 350px) {
+    .image {
+      left: 20%;
+    }
+  }
+
+  @media screen and (min-width: 351px) and (max-width: 450px) {
+    .image {
+      left: 25%;
+    }
+  }
+
+  @media screen and (min-width: 451px) and (max-width: 767px) {
+    .image {
+      left: 35%;
+    }
+  }
 }
 
-.next-news {
+.next-prev {
   text-align: center;
   margin: 5px 0px;
 
   a {
     color: white;
+    margin: 5px;
   }
 }
 

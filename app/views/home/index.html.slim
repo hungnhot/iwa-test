@@ -14,7 +14,9 @@
           = item[:sitebit]
         p.subtext.col-md-10
           = item[:subtext]
-  
-  .next-news.col-md-12
-      a.col-md-2.btn.btn-primary href="?page=#{@page + 1}" More News
+
+  .next-prev.col-md-12
+    - if @page > 1
+      a.col-md-2.btn.btn-primary href="?page=#{@page - 1}" Previous
+    a.col-md-2.btn.btn-primary href="?page=#{@page + 1}" Next
 
